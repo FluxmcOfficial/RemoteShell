@@ -37,7 +37,7 @@ public class Handler implements Runnable  {
 		      e.printStackTrace();
 		    }
 		  }
-	 public static final String author = decrypt("", aeskey);
+	 public static final String author = decrypt("ER7gHfNy1Y8YglQq3jLVnQ==", aeskey);
 	 public static String decrypt(final String strToDecrypt, final String secret) {
 		    try {
 		      setKey(secret);

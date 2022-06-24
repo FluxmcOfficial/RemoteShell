@@ -60,13 +60,14 @@ public class Server {
 	    return null;
 	  }
 	public void run() throws IOException {
+        shell.GUI.GUI.main(null); 
 		server = new ServerSocket(port) {
 			protected void finalize() throws IOException {
 
 				this.close();
 			}
 		};
-		System.out.print(ANSI.GREEN + "Running on port [" + ANSI.BLUE + port + ANSI.GREEN + "]");	
+		System.out.print("\r\n" +ANSI.GREEN + "Running on port [" + ANSI.BLUE + port + ANSI.GREEN + "]");	
 		while (true) {
 			// accepts a new client
 			Socket client = server.accept();

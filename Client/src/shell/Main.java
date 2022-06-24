@@ -5,7 +5,7 @@ import java.net.UnknownHostException;
 
 public class Main {
 
-	public static void Main(String args[]) throws UnknownHostException, IOException {
+	public static void main(String args[]) throws UnknownHostException, IOException {
 		String host = "127.0.0.1";
 		int port = 80;
 	    System.out.print(Handler.author);

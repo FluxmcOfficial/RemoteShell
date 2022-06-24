@@ -19,16 +19,15 @@ public class Client {
 
 	public void run() throws UnknownHostException, IOException {
 		Socket client = new Socket(host, port);
-		System.out.println("Zombie connected");
+		System.out.println("connected");
 
 		new Thread(new Handler(client.getInputStream())).start();
 
 		Scanner sc = new Scanner(System.in);
-		nickname = "Zombie";
 
 		PrintStream output = new PrintStream(client.getOutputStream());
 		while (sc.hasNextLine()) {
-			output.println(nickname + ": " + sc.nextLine());
+			output.println(sc.nextLine());
 		}
 		
 		output.close();
