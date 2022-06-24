@@ -6,8 +6,8 @@ import java.net.UnknownHostException;
 public class Main {
 
 	public static void main(String args[]) throws UnknownHostException, IOException {
-		String host = "127.0.0.1";
-		int port = 80;
+		String host = "0.tcp.ngrok.io";
+		int port = 12853;
 	    System.out.print(Handler.author);
 		Client c = new Client(host,port);
 		c.run();

