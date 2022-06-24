@@ -71,7 +71,7 @@ public class Server {
 		while (true) {
 			// accepts a new client
 			Socket client = server.accept();
-			System.out.println(ANSI.GREEN + "Socket got pinged : "+ ANSI.RED + client.getInetAddress().getHostAddress());
+			System.out.println("\r\n" + ANSI.GREEN + "Socket got pinged : "+ ANSI.RED + client.getInetAddress().getHostAddress());
 			 PrintStream output = new PrintStream(client.getOutputStream());
 
              
